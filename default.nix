@@ -5,7 +5,7 @@ stdenv.mkDerivation {
   name = "libprime-0.1";
 
   src = builtins.path {path = ./.;};
-
+  outputs = [ "out" "dev" ];
   buildPhase = ''
     gcc -fPIC -c sources/prime.c
     gcc -shared -o libprime.so prime.o headers/prime.h
