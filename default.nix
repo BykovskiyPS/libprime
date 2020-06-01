@@ -16,6 +16,6 @@ stdenv.mkDerivation {
     mkdir -p $out/include
 
     cp libprime.so $out/lib
-    cp headers/prime.h     $out/include
+    cp headers/prime.h $out/include
   '';
 }

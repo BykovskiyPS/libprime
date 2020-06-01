@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "prime.h"
+// #include "prime.h"
 #define N 100
 
 void PrimeNumbers(int count) {
