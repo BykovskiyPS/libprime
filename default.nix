@@ -2,7 +2,7 @@ with import <nixpkgs> {};
 
 stdenv.mkDerivation {
 
-  name = "libprime-0.1";
+  name = "libprime";
 
   src = builtins.path {path = ./.;};
   outputs = [ "out" "dev" ];
