@@ -1,10 +1,11 @@
-with import <nixpkgs> {};
+{stdenv, pkgs }:
 
-stdenv.mkDerivation {
+stdenv.mkDerivation rec {
 
   name = "libprime";
-
+  
   src = builtins.path {path = ./.;};
+  
   buildPhase = ''
     gcc -fPIC -c sources/prime.c
     gcc -shared -o libprime.so prime.o
